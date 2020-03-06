@@ -16,4 +16,3 @@ Capybara.default_driver = :selenium
 Capybara.default_max_wait_time = 15
 Capybara.page.driver.browser.manage.window.maximize
 Capybara.visit 'http://automationpractice.com/index.php'
-find(:xpath, '//*[@id="center_column"]/h1')

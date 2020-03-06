@@ -1,6 +1,11 @@
-Dado("que eu esteja na home logado com usuario valido") do
-  find(:xpath, '//*[@id="homeslider"]/li[3]/div')
-  find(:xpath, '//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a/span')    
+Dado("que eu esteja na home logado com usuario valido") do 
+  find(:xpath,'//*[@id="header"]/div[2]/div/div/nav/div[1]/a').click
+  fill_in(:xpath,'//*[@id="email"]',:with => 'kamillycarolineporto-70@quintadoslagos.com.br')
+  fill_in(@id="passwd", :with => 'bZ7ZbG88oG')
+  find(:xpath,'//*[@id="SubmitLogin"]/span').click
+  find(:xpath,'//*[@id="header_logo"]/a/img').click
+  find(:xpath,'//*[@id="homeslider"]/li[3]/div')
+  find(:xpath,'//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a/span')
 end
 
 Quando("eu clicar em My account") do
