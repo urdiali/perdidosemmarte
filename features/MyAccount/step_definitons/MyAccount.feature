@@ -3,47 +3,52 @@
 
 Funcionalidade: Acessar a Minha Conta
 
+Cenario: Fazer login
+  Dado que eu esteja na home
+  Quando eu clicar em Sign in e fizer o login
+  Entao estarei logado
+
 Cenario: Testar o botao ORDER HISTORY AND DETAILS
-  Dado que eu esteja na home logado com usuario valido
+  Dado que eu esteja logado
   Quando eu clicar em My account
     E clicar no botao ORDER HISTORY AND DETAILS
   Entao deve abrir uma pagina com titulo ORDER HISTORY
 
 Cenario: Testar link da coluna Order reference
-  Dado que eu esteja na home logado com usuario valido
+  Dado que eu esteja logado
   Quando eu clicar em My account
     E clicar no botao ORDER HISTORY AND DETAILS
     E clicar no link do produto
   Entao deve aparecer os detalhes do produto
 
 Cenario: Validar o botao para baixar a fatura em pdf
-  Dado que eu esteja na home logado com usuario valido
+  Dado que eu esteja logado
   Quando eu clicar em My account
     E clicar no botao ORDER HISTORY AND DETAILS
     E clicar em pdf
   Entao deve baixar o arquivo
 
 Cenario: Testar o botao Details
-  Dado que eu esteja na home logado com usuario valido
+  Dado que eu esteja logado
   Quando eu clicar em My account
     E clicar no botao ORDER HISTORY AND DETAILS
     E clicar no botao Details
   Entao deve aparecer os detalhes do produto
 
 Cenario: Testar o botao Reorder
-  Dado que eu esteja na home logado com usuario valido
+  Dado que eu esteja logado
   Quando eu clicar em My account
     E clicar no botao ORDER HISTORY AND DETAILS
     E clicar no botao Reorder
   Entao deve abrir uma pagina com a opcao de recompra do produto ja comprado
 
 Cenario: Testar o botao MY CREDIT SLIPS
-  Dado que eu esteja na home logado com usuario valido
+  Dado que eu esteja logado
   Quando eu clicar no botao MY CREDIT SLIPS 
   Entao deve abrir uma pagina com titulo CREDIT SLIPS
 
 Cenario: Testar o botao MY ADRESSESS
-  Dado que eu esteja na home logado com usuario valido
+  Dado que eu esteja logado
   Quando eu clicar em My account
     E clicar no botao MY ADRESSESS
   Entao deve abrir uma pagina com titulo MY ADRESSESS
@@ -78,10 +83,10 @@ Cenario: Testar o botao MY PERSONAL INFORMATION
 
 Cenario: Testar o botao save
   Dado que eu esteja na home logado com usuario valido
-  Quando eu clicar no botao MY PERSONAL INFORMATION
+  Quando clicar no botao MY PERSONAL INFORMATION
     E preencher os campos
     E clicar no botao Save
-  Entao deve recarregar a pagina e aparecer a mensagem "Your personal information has been successfully updated"
+  Entao deve recarregar a pagina e aparecer a mensagem Your personal information has been successfully updated
 
 Cenario: Testar o botao MY WISHLISTS 
   Dado que eu esteja na home logado com usuario valido
