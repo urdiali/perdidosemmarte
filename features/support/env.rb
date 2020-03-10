@@ -3,6 +3,7 @@ require 'cucumber'
 require 'selenium-webdriver'
 require 'capybara'
 require 'capybara/cucumber'
+require 'site_prism'
 #require 'page-object'
 #require 'data_magic'
 
