@@ -29,7 +29,7 @@ Entao("deve aparecer os detalhes do produto") do
 end
 
 Quando("clicar em pdf") do
-  @account_page.pdf.click   ##find(:xpath, '//*[@id="order-list"]/tbody/tr[1]/td[6]/a/i').click
+  @account_page.pdf.click  ##find(:xpath, '//*[@id="order-list"]/tbody/tr[1]/td[6]/a/i').click
 end
 
 Entao("deve baixar o arquivo") do
@@ -76,11 +76,10 @@ Quando("clicar no botao Delete") do
   @account_page.del.click    ##find(:xpath, '//*[@id="center_column"]/div[1]/div[1]/div[1]/ul/li[9]/a[2]').click
 end
 
-#Quando("clicar em OK") do
-  #accept_alert do
- # click_button('OK')
-  #end
-#end
+Quando("clicar em OK") do
+  alert = page.driver.browser.switch_to.alert
+  alert.accept
+end
 
 Entao("deve recarregar a pagina com titulo MY ADRESSESS") do
   find(:xpath, '//*[@id="center_column"]')

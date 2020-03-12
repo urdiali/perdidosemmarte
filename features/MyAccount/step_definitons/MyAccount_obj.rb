@@ -18,5 +18,5 @@ class AccountPage < SitePrism::Page
   element :mya, :xpath, '//*[@id="center_column"]' ##MY ADRESSESS
   element :up, :xpath, '//*[@id="center_column"]/div[1]/div[1]/div[1]/ul/li[9]/a[1]' ##UPDATE
   element :ya, :xpath, '//*[@id="center_column"]/div' ##YOUR ADRESS
-  #element :del, :xpath, '//*[@id="center_column"]/div[1]/div[1]/div[1]/ul/li[9]/a[2]' ##DELETE
+  element :del, :xpath, '//*[@id="center_column"]/div[1]/div[1]/div[1]/ul/li[9]/a[2]' ##DELETE
 end

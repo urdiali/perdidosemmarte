@@ -49,12 +49,12 @@ Contexto: Estar logado e na home
       E clicar no botao Update
     Entao deve abrir uma pagina com titulo YOUR ADRESS
 
-  #Cenario: Testar o botao Delete 
-   # Quando eu clicar em My account
-    #  E clicar no botao MY ADRESSESS
-     # E clicar no botao Delete
-      #E clicar em OK
-    #Entao deve recarregar a pagina com titulo MY ADRESSESS
+  Cenario: Testar o botao Delete 
+    Quando eu clicar em My account
+      E clicar no botao MY ADRESSESS
+      E clicar no botao Delete
+      E clicar em OK
+    Entao deve recarregar a pagina com titulo MY ADRESSESS
 
   Cenario: Testar o botao Add new adress
     Quando eu clicar em My account
